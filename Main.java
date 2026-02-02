@@ -68,7 +68,7 @@ public class Main {
             System.out.print("Next number: ");
             double nextNum = kb.nextDouble();
 
-            calc = calc.execute(op, nextNum);       // อัปเดตผลลัพธื
+            calc = calc.execute(op, nextNum);       // อัปเดตผลลัพธ์
             calc.display();                         // แสดงผลลัพธ์
         }
 

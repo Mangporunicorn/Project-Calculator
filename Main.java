@@ -47,19 +47,19 @@ public class Main {
         Scanner kb = new Scanner(System.in);
         
         System.out.println("--- Calculator (+ - * / %) ---");
-        System.out.print("Enter start number: ");
+        System.out.print("Enter number: ");
         double start = kb.nextDouble();               // รับค่าตัวเลขเริ่มต้น
         
         Calculator calc = new Calculator(start);
 
         while (true) {
             System.out.print("\n(+, -, *, /, %) | 'c' Clear | 'q' Quit: ");
-            String op = kb.nextLine();
+            String op = kb.next();
             
             if (op.equals("q")) break;      // ออกจากโปรแกรม
             
             if (op.equals("c")) {
-                System.out.print("Enter new start number: ");
+                System.out.print("Enter number: ");
                 calc = new Calculator(kb.nextDouble());
                 System.out.println("Memory Resetted.");
                 continue;
@@ -76,4 +76,3 @@ public class Main {
         kb.close();
     }
 }
-
